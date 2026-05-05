@@ -1,11 +1,8 @@
 let collapseBtn = document.querySelector(".toggle-btn");
-collapseBtn.focus();
 collapseBtn.addEventListener("click", dropTheMenu);
 
 let toggleContainerRef = document.querySelector(".toggle-container");
 let toggleNtnsRef = document.querySelector(".toggle-buttons");
-
-collapseBtn.focus();
 
 let collapsed = true;
 
