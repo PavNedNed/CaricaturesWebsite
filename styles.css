@@ -190,7 +190,7 @@ i {
 .toggle-btn {
     z-index: 10;
     position: absolute;
-    top: 80px;
+    top: 85px;
     cursor: pointer;
     display: none;
 
