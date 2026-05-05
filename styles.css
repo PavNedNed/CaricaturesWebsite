@@ -188,7 +188,7 @@ i {
 
 
 .toggle-btn {
-    z-index: 10;
+    z-index: 11;
     position: absolute;
     top: 85px;
     cursor: pointer;
@@ -203,6 +203,7 @@ i {
 
 .toggle-btn img {
     margin: 0 auto;
+    pointer-events: none;
 }
 
 .toggle-container {
@@ -210,23 +211,22 @@ i {
 
     position: absolute;
     left: 50%;
-    /* top: 50%; you also need this */
+    top: 100px;
 
-    transform: translate(-50%, -60%); /* combined */
+    transform: translate(-50%, -100%);
 
-    opacity: 0;
-    /* transform: translateY(-50px); */
+    opacity: 0.5;
     pointer-events: none;
 
-    transition: opacity 0.5s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.45s ease;
 }
 
 .toggle-container.show {
-    opacity: 1; /* not 0.5 */
+    opacity: 1;
     transform: translate(-50%, 0);
     pointer-events: auto;
 }
 
 .top-wrapper {
-    z-index: 10;
+    z-index: 9999;
 }
