@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+    .toggle-container{
+        display: block;
+    }
+    .left-buttons, .right-buttons{
+        display: none;
+    }
+    .toggle-btn, .toggle-buttons{
+        display: block;
+    }
+}

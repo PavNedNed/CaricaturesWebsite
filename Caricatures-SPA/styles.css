@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark-space {
+    position: relative;
+    height: 100px;
+    background-color: black;
+    z-index: 8;
+}
+
+.img-container {
+    height: 700px;
+    /* background-image: url(./images/carousel-1.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/carousel-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* VIJ TUK */
+.top-wrapper { 
+    /* background-color: white; */
+    height: 60px;
+    position:absolute;
+    top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    
+}
+.top-faq-wrapper {
+    margin-bottom: 0.4em;
+}
+
+.top-faq-wrapper, .top-faq-wrapper a{
+    font-size: 0.95em;
+    color:white;
+    text-decoration: none;
+}
+
+.r-border {
+    padding: 0 0.5em;
+}
+
+.top-icons-wrapper {
+    color: white;
+
+    padding-bottom: 1em;
+}
+
+.top-icons-wrapper {
+    font-size: 0.8em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.left-buttons ul li a, .right-buttons ul li a {
+    font-size: 0.85em;
+    font-weight: 700;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.left-buttons ul, .right-buttons ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.left-buttons, .right-buttons {
+    padding: 2em;
+}
+
+.logo-text {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo-text img{
+    height: 50px;
+    position: relative;
+    top: 8px;
+}
+
+.logo-text div {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 900px;
+    border-radius: 5em;
+    height: 60px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.organge-logo-part {
+    color: #e9551b;
+}
+
+/* image text */
+.top-text {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.main-text {
+    font-size: 70px;
+    font-weight: 700;
+    width: 600px;
+    text-align: center;
+}
+
+.img-container button {
+    background-color: black;
+    padding: 1em 1.5em; 
+    border-radius: 2em;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* toggle */
+/* .toggle-container{
+    display: none;
+} */
+.toggle-buttons {
+    font-size: 1em;
+    font-weight: 700;
+    
+    position: relative;
+    display: none;
+    
+}
+.toggle-buttons ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    margin: 90px auto 5px auto;
+
+    list-style-type: none;
+
+    background-color: white;
+    padding-top: 10px;
+    
+    border-radius: 0 0 20px 20px;
+}
+
+.toggle-buttons ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.toggle-btn {
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+    display: none;
+
+    padding-top: 10px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.toggle-btn img {
+    margin: 0 auto;
+}
+
+.toggle-container {
+    z-index: 0;
+
+    position: absolute;
+    left: 50%;
+    /* top: 50%; you also need this */
+
+    transform: translate(-50%, -60%); /* combined */
+
+    opacity: 0;
+    /* transform: translateY(-50px); */
+    pointer-events: none;
+
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.toggle-container.show {
+    opacity: 1; /* not 0.5 */
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+}
+
+.top-wrapper {
+    z-index: 10;
+}
