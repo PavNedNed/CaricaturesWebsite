@@ -20,5 +20,25 @@
     .main-text {
         width: auto;
         font-size: 50px;
+        line-height: 50px;
+    }
+
+    .top-text, .bottom-text {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .top-text {
+        padding-top: 100px;
+       
+    }
+    .img-container {
+        height: 500px;
+        /* background-position: cover 100px; */
+        background-size: cover;
+        background-position: 50% 100px;
+
+        background-image: url('./images/bg-image.jpg');
     }
 }

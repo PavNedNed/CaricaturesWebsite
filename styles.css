@@ -17,17 +17,49 @@ body {
 
 .img-container {
     height: 700px;
-    /* background-image: url(./images/carousel-1.jpg); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/carousel-1.jpg);
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./images/bg-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center; */
+
+    /*  */
+    background-image: 
+    url('./images/black-dots.png'),
+    url('./images/bg-image.jpg');
+    
+
+    background-position:
+    top left,
+    top left;
+
+    background-repeat:
+    no-repeat,
+    no-repeat;
+
+    background-size:
+    712px,
+    cover;
+    /*  */
+    background-position: center;
 
     color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.top-text, .main-text, .bottom-text {
+    text-shadow:
+        -3px -3px 0 black,
+         3px -3px 0 black,
+        -3px  3px 0 black,
+         3px  3px 0 black,
+        -3px  0   0 black,
+         3px  0   0 black,
+         0   -3px 0 black,
+         0    3px 0 black;
 }
 
 /* VIJ TUK */
@@ -132,25 +164,36 @@ i {
 
 /* image text */
 .top-text {
-    font-size: 22px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.bottom-text {
+    font-size: 40px;
     font-weight: 700;
 }
 
 .main-text {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: 700;
     width: 600px;
     text-align: center;
+    color: #e9d31b;
+
+    line-height: 80px;
 }
 
 .img-container button {
-    background-color: black;
-    padding: 1em 1.5em; 
+    background-color: #fe2a12;
+    padding: 0.75em 1.5em; 
     border-radius: 2em;
     border: none;
-    color: white;
-    font-weight: 600;
+    color: black;
+    font-weight: 700;
     cursor: pointer;
+
+    -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+    box-shadow: 0px 0px 15px 5px #000000;
 }
 
 /* toggle */
@@ -177,6 +220,7 @@ i {
 
     background-color: white;
     padding-top: 10px;
+    padding-bottom: 15px;
     
     border-radius: 0 0 20px 20px;
 }
@@ -229,4 +273,9 @@ i {
 
 .top-wrapper {
     z-index: 9999;
+}
+
+.toggle-buttons hr {
+    width: 150px;
+    border-top: 1px solid #ccc;
 }
