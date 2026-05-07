@@ -342,3 +342,51 @@ i {
 
     line-height: 80px;
 }
+
+/* --------------------------------------------  FOOTER -------------------------------------------- */
+.testimonials-img img {
+    width: 120px;
+}
+
+.testimonials-box {
+    padding-top: 20px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+
+    width: 440px;
+}
+
+.testimonials-text-wrapper {
+    align-content: center;
+    
+}
+.testimonials-text-wrapper .quote {
+    color: rgb(78, 78, 78);
+    /* font-weight: 700; */
+    font-size: 1em;
+}
+
+.testimonials-text-wrapper .author {
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+
+.testimonials-container {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#third {
+    align-self: flex-start;
+}
