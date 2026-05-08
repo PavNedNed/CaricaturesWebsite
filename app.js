@@ -4,6 +4,8 @@ import { loadHomeView } from "./src/views/homeView.js"
 import { loadFAQView } from "./src/views/faqView.js";
 import { } from "./src/dropDownMenu.js"
 
+page.base('/CaricaturesWebsite');
+
 page("/", loadHomeView)
 page("/faq", loadFAQView);
 page();
