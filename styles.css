@@ -434,6 +434,33 @@ i {
     font-size: 15px;
 }
 
+/* --------------------------------------------  FAQ -------------------------------------------- */
+.faq-wrapper .top-image {
+    width: 100%;
+    max-width: 930px;
+    margin: 30px auto 0;
+}
+
+.faq-wrapper .top-image img {
+    width: 100%;
+    display: block;
+}
+
+.faq-wrapper .text-boxes {
+    max-width: 900px;
+    margin: 0 auto 0;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.faq-wrapper .title {
+    padding-top: 20px;
+}
+.faq-wrapper .description {
+    padding-left: 20px;
+}
+
 /* --------------------------------------------  FOOTER -------------------------------------------- */
 .testimonials-img img {
     width: 140px;
@@ -503,6 +530,7 @@ footer span {
 .copyright {
     text-align: center;
     font-size: 13px;
+    padding-bottom: 15px;
 }
 
 .footer-menu-btns ul {
@@ -553,4 +581,9 @@ footer hr {
 
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+/* TEST ONLY */
+.home-wrapper {
+    display: none;
 }
