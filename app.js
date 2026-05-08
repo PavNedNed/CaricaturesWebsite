@@ -7,7 +7,8 @@ import { } from "./src/dropDownMenu.js"
 page.base('/CaricaturesWebsite');
 
 page("/", loadHomeView)
-page("/#/faq", loadFAQView);
+// page("/#/faq", loadFAQView);
+page("#/faq", loadFAQView);
 page();
 
 // // drop-down menu
