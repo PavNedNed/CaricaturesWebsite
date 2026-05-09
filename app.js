@@ -6,9 +6,15 @@ import { } from "./src/dropDownMenu.js"
 
 // page.base('/CaricaturesWebsite');
 
-page("#/", loadHomeView)
-page("#/faq", loadFAQView);
-page();
+// page("#/", loadHomeView)
+// page("#/faq", loadFAQView);
+// page();
+
+window.addEventListener("DOMContentLoaded", () => {
+  page("#/", loadHomeView);
+  page("#/faq", loadFAQView);
+  page();
+});
 
 // // drop-down menu
 // let collapseBtn = document.querySelector(".toggle-btn");
