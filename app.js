@@ -6,6 +6,9 @@ import { } from "./src/dropDownMenu.js"
 
 page.base('/CaricaturesWebsite');
 
-page("home", loadHomeView);
-page("faq", loadFAQView);
+// This handles the "empty" path after CaricaturesWebsite/
+page('/', () => page.redirect('/home')); 
+
+page("/home", loadHomeView);
+page("/faq", loadFAQView);
 page();

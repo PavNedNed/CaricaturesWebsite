@@ -8,21 +8,22 @@
 
     <!-- START REDIRECT SCRIPT -->
     <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&') 
-          }).filter(function(v) {
-            return v.indexOf('p=/') === 0;
-          })[0];
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&')
+                }).filter(function (v) {
+                    return v.indexOf('p=/') === 0;
+                })[0];
 
-          if (decoded !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded.slice(3) + l.hash
-            );
-          }
-        }
-      }(window.location));
+                if (decoded !== undefined) {
+                    // This ensures we keep the /CaricaturesWebsite/ part of the path
+                    window.history.replaceState(null, null,
+                        l.pathname.slice(0, -1) + decoded.slice(3) + l.hash
+                    );
+                }
+            }
+        }(window.location));
     </script>
     <!-- END REDIRECT SCRIPT -->
 
@@ -35,222 +36,238 @@
 </head>
 
 <body>
-    
-        <header>
-            <section class="dark-space"></section>
-            <section class="top-wrapper">
-                <section class="top-faq-wrapper">
-                    <a href="faq">FAQs</a>
-                    <span class="r-border">|</span>
-                    <a href="#/help">ПОМОЩ</a>
-                    <span class="r-border">|</span>
-                    <a href="#/contacts">КОНТАКТИ</a>
-                </section>
 
-                <section class="top-icons-wrapper">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </section>
+    <header>
+        <section class="dark-space"></section>
+        <section class="top-wrapper">
+            <section class="top-faq-wrapper">
+                <a href="faq">FAQs</a>
+                <span class="r-border">|</span>
+                <a href="#/help">ПОМОЩ</a>
+                <span class="r-border">|</span>
+                <a href="#/contacts">КОНТАКТИ</a>
+            </section>
 
-                
-                <section class="top-menu-wrapper">
-                    <section class="left-buttons">
-                        <ul>
-                            <li><a href="home">НАЧАЛО</a></li>
-                            <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
-                            <li><a href="#/product">ПРОДУКТ</a></li>
-                        </ul>
-                    </section>
-                    <section class="logo-text">
-                        <div class="logo-img"><a href="/home"><img src="./images/logo.png"></a></div>
-                    </section>
-                    <section class="right-buttons">
-                        <ul>
-                            <li><a href="#/templates">ШАБЛОНИ</a></li>
-                            <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
-                        </ul>
-                    </section>
-                </section>
+            <section class="top-icons-wrapper">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </section>
 
-                <div class="toggle-btn">
-                    <img src="./images/collapse_btn.png">
+
+            <section class="top-menu-wrapper">
+                <section class="left-buttons">
+                    <ul>
+                        <li><a href="home">НАЧАЛО</a></li>
+                        <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
+                        <li><a href="#/product">ПРОДУКТ</a></li>
+                    </ul>
+                </section>
+                <section class="logo-text">
+                    <div class="logo-img"><a href="/home"><img src="./images/logo.png"></a></div>
+                </section>
+                <section class="right-buttons">
+                    <ul>
+                        <li><a href="#/templates">ШАБЛОНИ</a></li>
+                        <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <div class="toggle-btn">
+                <img src="./images/collapse_btn.png">
+            </div>
+
+        </section>
+
+        <section class="toggle-container">
+            <section class="toggle-buttons">
+                <ul>
+                    <li><a href="home">НАЧАЛО</a></li>
+                    <hr>
+                    <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
+                    <hr>
+                    <li><a href="#/product">ПРОДУКТ</a></li>
+                    <hr>
+                    <li><a href="#/templates">ШАБЛОНИ</a></li>
+                    <hr>
+                    <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
+                </ul>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="home-wrapper">
+            <section class="img-container">
+                <section class="top-text" data-text="РЪЧНО РИСУВАНИ">РЪЧНО РИСУВАНИ</section>
+                <section class="main-text">КАРИКАТУРИ</section>
+                <section class="bottom-text" data-text="ПО ПОРЪЧКА">ПО ПОРЪЧКА</section>
+                <button class="more-btn">НАУЧИ ПОВЕЧЕ</button>
+            </section>
+
+            <hr>
+
+            <section class="top-sections-text-container">
+                <section class="text-title">
+                    ИЗРАБОТКА НА ДИГИТАЛНИ КАРИКАТУРИ И ПОРТРЕТИ!
+                </section>
+                <section class="text-description">
+                    Предлагаме изработката на дигитални карикатури и портрети с помощта на професионални WACOM графични
+                    таблети и специализиран софтуер.
+                </section>
+            </section>
+
+            <section class="home-sections-wrapper">
+                <section class="home-section-container">
+                    <section class="home-section-img">
+                        <img src="./images/home/h_1.jpg">
+                    </section>
+                    <section class="home-section-text">
+                        Работим в три фази - скеч, линиране и оцветяване.<br>
+                        Първата фаза започва след като ни споделите Вашата идея и ни изпратите нужните снимки.
+                    </section>
+                    <button class="more-btn">НАШАТА РАБОТА</button>
+                </section>
+                <section class="home-section-container">
+                    <section class="home-section-img">
+                        <img src="./images/home/h_2.jpg">
+                    </section>
+                    <section class="home-section-text">
+                        След като сте доволни с крайния резултат, печатаме картините с помощта на принтери с висока
+                        резолюция, слагаме ги в рамки и ги изпращаме чрез куриер.
+                    </section>
+                    <button class="more-btn">ПОРТФОЛИО</button>
+                </section>
+                <section class="home-section-container">
+                    <section class="home-section-img">
+                        <img src="./images/home/h_4.jpg">
+                    </section>
+                    <section class="home-section-text">
+                        Обикновено използваме <strong><a href="mailto:pocomaxs2@gmail.com" rel="noopener">email
+                                кореспонденция</a></strong>, за да общуваме с нашите клиенти, но можете да се свържете с
+                        нас и чрез нашата <strong><a href="#/contacts">контактна страница</a></strong>.
+                    </section>
+                    <button class="more-btn">КОНТАКТИ</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="faq-wrapper">
+            <section class="top-image">
+                <img src="./images/faq-image.jpg">
+            </section>
+            <section class="text-boxes">
+                <h2>FAQ - Често Задавани Въпроси</h2>
+                <div id="box-1">
+                    <p class="title"><strong>Дигиталните карикатури ръчно ли се рисуват?</strong></p>
+                    <p class="description">Да, както пастелните, така и дигиталните карикатури се рисуват ръчно.
+                        Разликата е в инструментите, с който се изработват творбите.
+                        <br>
+                        За пастелните е необходимо хартия и пастели, а за дигиталните - дигитален таблет и писалка, с
+                        която се случва цялата тази магия.
+                    </p>
+                </div>
+                <div id="box-2">
+                    <p class="title"><strong>За колко време става изработката на една карикатура?</strong></p>
+                    <p class="description">Работим бързо и се съобразяваме изцяло с твоя срок.
+                        Можеш да получиш карикатурата си точно когато ти трябва – дори и за 24 часа.
+                        <br>
+                        Срокът започва да тече от момента, в който потвърдиш описанието и снимките.
+                    </p>
+                </div>
+                <div id="box-3">
+                    <p class="title"><strong>Как да изберем подходящи снимки за карикатура?</strong></p>
+                    <p class="description">Снимките, които трябва да ни изпратите трябва да са с добро качество,
+                        усмихнати, неорязани. Добре е да ни изпратите няколко снимки на лице в близък план, за най-добри
+                        резултати.</p>
+                </div>
+                <div id="box-4">
+                    <p class="title"><strong>Какви размери има?</strong></p>
+                    <p class="description">30x40 см (A3) или 21х30 см (А4)</p>
+                </div>
+                <div id="box-5">
+                    <p class="title"><strong>Може ли да направите карикатура по моя идея?</strong></p>
+                    <p class="description">Карикатурите са персонализиран подарък и могат да бъдат изцяло по Ваша идея.
+                    </p>
+                </div>
+                <div id="box-6">
+                    <p class="title"><strong>Ако имам конкретна визия, която съм харесал от Вашият сайт или другаде в
+                            интернет?</strong></p>
+                    <p class="description">Ако имате конкретна визия, която сте харесали (без значение дали в нашия сайт
+                        или другаде в интернет) или някакви конкретни детайли, които искате да ползва художникът, може
+                        да изпратите и тях.</p>
+                </div>
+                <div id="box-7">
+                    <p class="title"><strong>Как да поръчам карикатура?</strong></p>
+                    <p class="description">Ако желаете да поръчате, моля, изпратете снимки в добро качество на имейл-а
+                        ни, също и описание на Вашата идея. Ако имате конкретна визия, която сте харесали (без значение
+                        дали в нашият сайт или другаде в интернет) или някакви конкретни детайли, които искате да ползва
+                        художника, може да изпратите и тях. Добавете Ваш телефон за връзка и ще се свържем с Вас за
+                        потвърждение и уточнения, ако са необходими.</p>
                 </div>
 
             </section>
-        
-            <section class="toggle-container">
-                <section class="toggle-buttons">
-                    <ul>
-                        <li><a href="home">НАЧАЛО</a></li><hr>
-                        <li><a href="#/gallery">ГАЛЕРИЯ</a></li><hr>
-                        <li><a href="#/product">ПРОДУКТ</a></li><hr>
-                        <li><a href="#/templates">ШАБЛОНИ</a></li><hr>
-                        <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
-                    </ul>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <hr class="hr-bottom">
+        <section class="testimonials-container">
+            <section class="testimonials-box">
+                <section class="testimonials-img">
+                    <img src="./images/footer/1.jpg">
                 </section>
-            </section>
-        </header>
-
-        <main>
-            <section class="home-wrapper">
-                <section class="img-container">
-                    <section class="top-text" data-text="РЪЧНО РИСУВАНИ">РЪЧНО РИСУВАНИ</section>
-                    <section class="main-text">КАРИКАТУРИ</section>
-                    <section class="bottom-text" data-text="ПО ПОРЪЧКА">ПО ПОРЪЧКА</section>
-                    <button class="more-btn">НАУЧИ ПОВЕЧЕ</button>
-                </section>
-
-                <hr>
-
-                <section class="top-sections-text-container">
-                    <section class="text-title">
-                        ИЗРАБОТКА НА ДИГИТАЛНИ КАРИКАТУРИ И ПОРТРЕТИ!
-                    </section>
-                    <section class="text-description">
-                        Предлагаме изработката на дигитални карикатури и портрети с помощта на професионални WACOM  графични таблети и специализиран софтуер.
-                    </section>
-                </section>
-
-                <section class="home-sections-wrapper">
-                    <section class="home-section-container">
-                        <section class="home-section-img">
-                            <img src="./images/home/h_1.jpg">
-                        </section>
-                        <section class="home-section-text">
-                            Работим в три фази - скеч, линиране и оцветяване.<br>
-                            Първата фаза започва след като ни споделите Вашата идея и ни изпратите нужните снимки.
-                        </section>
-                        <button class="more-btn">НАШАТА РАБОТА</button>
-                    </section>
-                    <section class="home-section-container">
-                        <section class="home-section-img">
-                            <img src="./images/home/h_2.jpg">
-                        </section>
-                        <section class="home-section-text">
-                            След като сте доволни с крайния резултат, печатаме картините с помощта на принтери с висока резолюция, слагаме ги в рамки и ги изпращаме чрез куриер.
-                        </section>
-                        <button class="more-btn">ПОРТФОЛИО</button>
-                    </section>
-                    <section class="home-section-container">
-                        <section class="home-section-img">
-                            <img src="./images/home/h_4.jpg">
-                        </section>
-                        <section class="home-section-text">
-                            Обикновено използваме <strong><a href="mailto:pocomaxs2@gmail.com" rel="noopener">email кореспонденция</a></strong>, за да общуваме с нашите клиенти, но можете да се свържете с нас и чрез нашата <strong><a href="#/contacts">контактна страница</a></strong>.
-                        </section>
-                        <button class="more-btn">КОНТАКТИ</button>
-                    </section>
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Получих прекрасен подарък, с който успях да зарадвам приятел!</section>
+                    <section class="author">Мария Павлова</section>
                 </section>
             </section>
 
-            <section class="faq-wrapper">
-                <section class="top-image">
-                    <img src="./images/faq-image.jpg">
+            <section class="testimonials-box">
+                <section class="testimonials-img">
+                    <img src="./images/footer/2.jpg">
                 </section>
-                <section class="text-boxes">
-                    <h2>FAQ - Често Задавани Въпроси</h2>
-                    <div id="box-1">
-                        <p class="title"><strong>Дигиталните карикатури ръчно ли се рисуват?</strong></p>
-                        <p class="description">Да, както пастелните, така и дигиталните карикатури се рисуват ръчно. Разликата е в инструментите, с който се изработват творбите.
-    <br>
-    За пастелните е необходимо хартия и пастели, а за дигиталните - дигитален таблет и писалка, с която се случва цялата тази магия.</p>
-                    </div>    
-                    <div id="box-2">
-                        <p class="title"><strong>За колко време става изработката на една карикатура?</strong></p>
-                        <p class="description">Работим бързо и се съобразяваме изцяло с твоя срок.
-Можеш да получиш карикатурата си точно когато ти трябва – дори и за 24 часа.
-<br>
-Срокът започва да тече от момента, в който потвърдиш описанието и снимките.</p>
-                    </div> 
-                    <div id="box-3">
-                        <p class="title"><strong>Как да изберем подходящи снимки за карикатура?</strong></p>
-                        <p class="description">Снимките, които трябва да ни изпратите трябва да са с добро качество, усмихнати, неорязани. Добре е да ни изпратите няколко снимки на лице в близък план, за най-добри резултати.</p>
-                    </div>   
-                    <div id="box-4">
-                        <p class="title"><strong>Какви размери има?</strong></p>
-                        <p class="description">30x40 см (A3) или 21х30 см (А4)</p>
-                    </div>      
-                    <div id="box-5">
-                        <p class="title"><strong>Може ли да направите карикатура по моя идея?</strong></p>
-                        <p class="description">Карикатурите са персонализиран подарък и могат да бъдат изцяло по Ваша идея.</p>
-                    </div>  
-                    <div id="box-6">
-                        <p class="title"><strong>Ако имам конкретна визия, която съм харесал от Вашият сайт или другаде в интернет?</strong></p>
-                        <p class="description">Ако имате конкретна визия, която сте харесали (без значение дали в нашия сайт или другаде в интернет) или някакви конкретни детайли, които искате да ползва художникът, може да изпратите и тях.</p>
-                    </div>  
-                    <div id="box-7">
-                        <p class="title"><strong>Как да поръчам карикатура?</strong></p>
-                        <p class="description">Ако желаете да поръчате, моля, изпратете снимки в добро качество на имейл-а ни, също и описание на Вашата идея. Ако имате конкретна визия, която сте харесали (без значение дали в нашият сайт или другаде в интернет) или някакви конкретни детайли, които искате да ползва художника, може да изпратите и тях. Добавете Ваш телефон за връзка и ще се свържем с Вас за потвърждение и уточнения, ако са необходими.</p>
-                    </div>  
-
-                </section>
-            </section>
-        </main>
-
-        
-
-        <footer>
-            <hr class="hr-bottom">
-            <section class="testimonials-container">
-                <section class="testimonials-box">
-                    <section class="testimonials-img">
-                        <img src="./images/footer/1.jpg">
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Работата с тях беше бърза, лесна и безпроблемна... Ще поръчвам отново!
                     </section>
-                    <section class="testimonials-text-wrapper">
-                        <section class="quote">Получих прекрасен подарък, с който успях да зарадвам приятел!</section>
-                        <section class="author">Мария Павлова</section>
-                    </section>
-                </section>
-
-                <section class="testimonials-box">
-                    <section class="testimonials-img">
-                        <img src="./images/footer/2.jpg">
-                    </section>
-                    <section class="testimonials-text-wrapper">
-                        <section class="quote">Работата с тях беше бърза, лесна и безпроблемна... Ще поръчвам отново!</section>
-                        <section class="author">Илияна Найденова</section>
-                    </section>
-                </section>
-
-                <section class="testimonials-box" id="third">
-                    <section class="testimonials-img">
-                        <img src="./images/footer/3.jpg">
-                    </section>
-                    <section class="testimonials-text-wrapper">
-                        <section class="quote">Забавен подарък, с който можете да зарадвате роднина или приятел!</section>
-                        <section class="author">Мартин Стефанов</section>
-                    </section>
+                    <section class="author">Илияна Найденова</section>
                 </section>
             </section>
 
-            <section class="navigation-container">
-                <section class="footer-menu-btns">
-                    <ul>
-                        <li><a href="#/home">НАЧАЛО</a></li>
-                        <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
-                        <li><a href="#/product">ПРОДУКТ</a></li>
-                        <li><a href="#/templates">ШАБЛОНИ</a></li>
-                        <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="#/help">ПОМОЩ</a></li>
-                        <li><a href="#/contacts">КОНТАКТИ</a></li>
-                    </ul>
+            <section class="testimonials-box" id="third">
+                <section class="testimonials-img">
+                    <img src="./images/footer/3.jpg">
                 </section>
-
-
-                <div class="copyright">© All rights reserved 2017-2026.<br> <span>Pavel Nedelchev</span></div>
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Забавен подарък, с който можете да зарадвате роднина или приятел!</section>
+                    <section class="author">Мартин Стефанов</section>
+                </section>
             </section>
-        </footer>
+        </section>
+
+        <section class="navigation-container">
+            <section class="footer-menu-btns">
+                <ul>
+                    <li><a href="#/home">НАЧАЛО</a></li>
+                    <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
+                    <li><a href="#/product">ПРОДУКТ</a></li>
+                    <li><a href="#/templates">ШАБЛОНИ</a></li>
+                    <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="#/help">ПОМОЩ</a></li>
+                    <li><a href="#/contacts">КОНТАКТИ</a></li>
+                </ul>
+            </section>
+
+
+            <div class="copyright">© All rights reserved 2017-2026.<br> <span>Pavel Nedelchev</span></div>
+        </section>
+    </footer>
 </body>
 
 </html>
-
-
-
-
-
-
-
