@@ -17,10 +17,12 @@
                 })[0];
 
                 if (decoded !== undefined) {
-                    // This ensures we keep the /CaricaturesWebsite/ part of the path
-                    window.history.replaceState(null, null,
-                        l.pathname.slice(0, -1) + decoded.slice(3) + l.hash
-                    );
+                    // This removes the ?p= part and restores the clean URL
+                    var newUrl = l.pathname.replace(/\/$/, '') + decoded.slice(3) + l.hash;
+
+                    window.history.replaceState(null, null, newUrl);
+
+                    console.log("URL cleaned to:", newUrl);
                 }
             }
         }(window.location));
