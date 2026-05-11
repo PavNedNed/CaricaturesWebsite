@@ -6,6 +6,6 @@ import { } from "./src/dropDownMenu.js"
 
 page.base('/CaricaturesWebsite');
 
-page("/home", loadHomeView);
-page("/faq", loadFAQView);
+page("home", loadHomeView);
+page("faq", loadFAQView);
 page();
