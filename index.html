@@ -9,6 +9,32 @@
     <!-- START REDIRECT SCRIPT -->
     <script type="text/javascript">
         (function (l) {
+            if (l.search.indexOf('p=/') !== -1) {
+                var params = new URLSearchParams(l.search);
+                var targetPath = params.get('p'); // This is "/faq"
+
+                if (targetPath) {
+                    // 1. Get the base path (e.g., /CaricaturesWebsite) 
+                    // and remove any trailing slashes to avoid double slashes
+                    var repoName = l.pathname.replace(/\/$/, '');
+
+                    // 2. Ensure targetPath starts with a slash
+                    if (targetPath.charAt(0) !== '/') {
+                        targetPath = '/' + targetPath;
+                    }
+
+                    // 3. Combine: /CaricaturesWebsite + /faq
+                    var newUrl = repoName + targetPath + l.hash;
+
+                    // 4. Update the URL
+                    window.history.replaceState(null, null, newUrl);
+                }
+            }
+        }(window.location));
+    </script>
+    <!-- 
+    <script type="text/javascript">
+        (function (l) {
             console.log("Redirect script started. Current search:", l.search);
 
             // Look for 'p=' anywhere in the search string
@@ -34,7 +60,7 @@
                 console.log("No redirect parameter found in URL.");
             }
         }(window.location));
-    </script>
+    </script> -->
     <!-- END REDIRECT SCRIPT -->
 
     <link rel="stylesheet" href="./styles.css">
