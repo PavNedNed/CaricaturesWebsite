@@ -9,7 +9,12 @@
     <!-- START REDIRECT SCRIPT -->
     <script type="text/javascript">
         (function (l) {
-            if (l.search[1] === '/') {
+            console.log("Redirect script started. Current search:", l.search);
+
+            // Look for 'p=' anywhere in the search string
+            if (l.search.indexOf('p=/') !== -1) {
+                console.log("Found 'p=' parameter. Starting clean-up...");
+
                 var decoded = l.search.slice(1).split('&').map(function (s) {
                     return s.replace(/~and~/g, '&')
                 }).filter(function (v) {
@@ -17,13 +22,16 @@
                 })[0];
 
                 if (decoded !== undefined) {
-                    // This removes the ?p= part and restores the clean URL
-                    var newUrl = l.pathname.replace(/\/$/, '') + decoded.slice(3) + l.hash;
+                    var newPath = decoded.slice(3); // This is the '/faq' part
+                    var repoName = l.pathname.replace(/\/$/, ''); // This is '/CaricaturesWebsite'
+                    var newUrl = repoName + newPath + l.hash;
+
+                    console.log("Replacing history with:", newUrl);
 
                     window.history.replaceState(null, null, newUrl);
-
-                    console.log("URL cleaned to:", newUrl);
                 }
+            } else {
+                console.log("No redirect parameter found in URL.");
             }
         }(window.location));
     </script>
