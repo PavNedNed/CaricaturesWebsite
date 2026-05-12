@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дигитални карикатури</title>
+
+    <!-- START REDIRECT SCRIPT -->
+    <script type="text/javascript">
+        (function (l) {
+            if (l.search.indexOf('p=/') !== -1) {
+                var params = new URLSearchParams(l.search);
+                var targetPath = params.get('p'); // This is "/faq"
+
+                if (targetPath) {
+                    // 1. Get the base path (e.g., /CaricaturesWebsite) 
+                    // and remove any trailing slashes to avoid double slashes
+                    var repoName = l.pathname.replace(/\/$/, '');
+
+                    // 2. Ensure targetPath starts with a slash
+                    if (targetPath.charAt(0) !== '/') {
+                        targetPath = '/' + targetPath;
+                    }
+
+                    // 3. Combine: /CaricaturesWebsite + /faq
+                    var newUrl = repoName + targetPath + l.hash;
+
+                    // 4. Update the URL
+                    window.history.replaceState(null, null, newUrl);
+                }
+            }
+        }(window.location));
+    </script>
+    <!-- END REDIRECT SCRIPT -->
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./viewports.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="dark-space"></section>
+        <section class="top-wrapper">
+            <section class="top-faq-wrapper">
+                <a href="faq">FAQs</a>
+                <span class="r-border">|</span>
+                <a href="help">ПОМОЩ</a>
+                <span class="r-border">|</span>
+                <a href="contacts">КОНТАКТИ</a>
+            </section>
+
+            <section class="top-icons-wrapper">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </section>
+
+
+            <section class="top-menu-wrapper">
+                <section class="left-buttons">
+                    <ul>
+                        <li><a href="home">НАЧАЛО</a></li>
+                        <li><a href="gallery">ГАЛЕРИЯ</a></li>
+                        <li><a href="product">ПРОДУКТ</a></li>
+                    </ul>
+                </section>
+                <section class="logo-text">
+                    <div class="logo-img"><a href="home"><img src="./images/logo.png"></a></div>
+                </section>
+                <section class="right-buttons">
+                    <ul>
+                        <li><a href="templates">ШАБЛОНИ</a></li>
+                        <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <div class="toggle-btn">
+                <img src="./images/collapse_btn.png">
+            </div>
+
+        </section>
+
+        <section class="toggle-container">
+            <section class="toggle-buttons">
+                <ul>
+                    <li><a href="home">НАЧАЛО</a></li>
+                    <hr>
+                    <li><a href="gallery">ГАЛЕРИЯ</a></li>
+                    <hr>
+                    <li><a href="product">ПРОДУКТ</a></li>
+                    <hr>
+                    <li><a href="templates">ШАБЛОНИ</a></li>
+                    <hr>
+                    <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <div id="myBtn" title="Нагоре"><img src="./images/up-arrow.png"></div>
+    </header>
+
+    <main>
+       
+    </main>
+
+
+
+    <footer>
+        <hr class="hr-bottom">
+        <section class="testimonials-container">
+            <section class="testimonials-box">
+                <section class="testimonials-img">
+                    <img src="./images/footer/1.jpg">
+                </section>
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Получих прекрасен подарък, с който успях да зарадвам приятел!</section>
+                    <section class="author">Мария Павлова</section>
+                </section>
+            </section>
+
+            <section class="testimonials-box">
+                <section class="testimonials-img">
+                    <img src="./images/footer/2.jpg">
+                </section>
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Работата с тях беше бърза, лесна и безпроблемна... Ще поръчвам отново!
+                    </section>
+                    <section class="author">Илияна Найденова</section>
+                </section>
+            </section>
+
+            <section class="testimonials-box" id="third">
+                <section class="testimonials-img">
+                    <img src="./images/footer/3.jpg">
+                </section>
+                <section class="testimonials-text-wrapper">
+                    <section class="quote">Забавен подарък, с който можете да зарадвате роднина или приятел!</section>
+                    <section class="author">Мартин Стефанов</section>
+                </section>
+            </section>
+        </section>
+
+        <section class="navigation-container">
+            <section class="footer-menu-btns">
+                <ul>
+                    <li><a href="home">НАЧАЛО</a></li>
+                    <li><a href="gallery">ГАЛЕРИЯ</a></li>
+                    <li><a href="product">ПРОДУКТ</a></li>
+                    <li><a href="templates">ШАБЛОНИ</a></li>
+                    <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
+                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="help">ПОМОЩ</a></li>
+                    <li><a href="contacts">КОНТАКТИ</a></li>
+                </ul>
+            </section>
+
+
+            <div class="copyright">© All rights reserved 2017-2026.<br> <span>Pavel Nedelchev</span></div>
+        </section>
+    </footer>
+
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

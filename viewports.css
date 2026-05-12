@@ -1,0 +1,55 @@
+@media (max-width: 900px) {
+    .toggle-container{
+        display: block;
+    }
+    .left-buttons, .right-buttons{
+        display: none;
+    }
+    .toggle-btn, .toggle-buttons{
+        display: block;
+    }
+
+    .top-menu-wrapper {
+        width: 100%;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .main-text {
+        width: auto;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .top-text, .bottom-text {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .top-text {
+        padding-top: 100px;
+       
+    }
+    .img-container {
+        height: 500px;
+        /* background-position: cover 100px; */
+        background-size: cover;
+        background-position: 50% 100px;
+
+        background-image: url('./images/bg-image.jpg');
+    }
+
+    .faq-wrapper .top-image,
+    .help-wrapper .top-image, 
+    .contacts-wrapper .wrap-container,
+    .templates-wrapper,
+    .product-wrapper,
+    .logos-wrapper,
+    .gallery-wrapper{
+    
+        margin: 110px auto 0;
+    }
+}
