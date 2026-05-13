@@ -32,35 +32,6 @@
             }
         }(window.location));
     </script>
-    <!-- 
-    <script type="text/javascript">
-        (function (l) {
-            console.log("Redirect script started. Current search:", l.search);
-
-            // Look for 'p=' anywhere in the search string
-            if (l.search.indexOf('p=/') !== -1) {
-                console.log("Found 'p=' parameter. Starting clean-up...");
-
-                var decoded = l.search.slice(1).split('&').map(function (s) {
-                    return s.replace(/~and~/g, '&')
-                }).filter(function (v) {
-                    return v.indexOf('p=/') === 0;
-                })[0];
-
-                if (decoded !== undefined) {
-                    var newPath = decoded.slice(3); // This is the '/faq' part
-                    var repoName = l.pathname.replace(/\/$/, ''); // This is '/CaricaturesWebsite'
-                    var newUrl = repoName + newPath + l.hash;
-
-                    console.log("Replacing history with:", newUrl);
-
-                    window.history.replaceState(null, null, newUrl);
-                }
-            } else {
-                console.log("No redirect parameter found in URL.");
-            }
-        }(window.location));
-    </script> -->
     <!-- END REDIRECT SCRIPT -->
 
     <link rel="stylesheet" href="./styles.css">
@@ -79,9 +50,9 @@
             <section class="top-faq-wrapper">
                 <a href="faq">FAQs</a>
                 <span class="r-border">|</span>
-                <a href="#/help">ПОМОЩ</a>
+                <a href="help">ПОМОЩ</a>
                 <span class="r-border">|</span>
-                <a href="#/contacts">КОНТАКТИ</a>
+                <a href="contacts">КОНТАКТИ</a>
             </section>
 
             <section class="top-icons-wrapper">
@@ -97,17 +68,17 @@
                 <section class="left-buttons">
                     <ul>
                         <li><a href="home">НАЧАЛО</a></li>
-                        <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
-                        <li><a href="#/product">ПРОДУКТ</a></li>
+                        <li><a href="gallery">ГАЛЕРИЯ</a></li>
+                        <li><a href="product">ПРОДУКТ</a></li>
                     </ul>
                 </section>
                 <section class="logo-text">
-                    <div class="logo-img"><a href="/home"><img src="./images/logo.png"></a></div>
+                    <div class="logo-img"><a href="home"><img src="./images/logo.png"></a></div>
                 </section>
                 <section class="right-buttons">
                     <ul>
-                        <li><a href="#/templates">ШАБЛОНИ</a></li>
-                        <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
+                        <li><a href="templates">ШАБЛОНИ</a></li>
+                        <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
                     </ul>
                 </section>
             </section>
@@ -123,13 +94,13 @@
                 <ul>
                     <li><a href="home">НАЧАЛО</a></li>
                     <hr>
-                    <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
+                    <li><a href="gallery">ГАЛЕРИЯ</a></li>
                     <hr>
-                    <li><a href="#/product">ПРОДУКТ</a></li>
+                    <li><a href="product">ПРОДУКТ</a></li>
                     <hr>
-                    <li><a href="#/templates">ШАБЛОНИ</a></li>
+                    <li><a href="templates">ШАБЛОНИ</a></li>
                     <hr>
-                    <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
+                    <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
                 </ul>
             </section>
         </section>
@@ -179,14 +150,14 @@
         <section class="navigation-container">
             <section class="footer-menu-btns">
                 <ul>
-                    <li><a href="#/home">НАЧАЛО</a></li>
-                    <li><a href="#/gallery">ГАЛЕРИЯ</a></li>
-                    <li><a href="#/product">ПРОДУКТ</a></li>
-                    <li><a href="#/templates">ШАБЛОНИ</a></li>
-                    <li><a href="#/logos">ЛОГОТА И АВАТАРИ</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                    <li><a href="#/help">ПОМОЩ</a></li>
-                    <li><a href="#/contacts">КОНТАКТИ</a></li>
+                    <li><a href="home">НАЧАЛО</a></li>
+                    <li><a href="gallery">ГАЛЕРИЯ</a></li>
+                    <li><a href="product">ПРОДУКТ</a></li>
+                    <li><a href="templates">ШАБЛОНИ</a></li>
+                    <li><a href="logos">ЛОГОТА И АВАТАРИ</a></li>
+                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="help">ПОМОЩ</a></li>
+                    <li><a href="contacts">КОНТАКТИ</a></li>
                 </ul>
             </section>
 

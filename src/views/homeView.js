@@ -49,7 +49,7 @@ let temp = (dummy) => html `
                             <img src="./images/home/h_4.jpg">
                         </section>
                         <section class="home-section-text">
-                            Обикновено използваме <strong><a href="mailto:pocomaxs2@gmail.com" rel="noopener">email кореспонденция</a></strong>, за да общуваме с нашите клиенти, но можете да се свържете с нас и чрез нашата <strong><a href="/contacts">контактна страница</a></strong>.
+                            Обикновено използваме <strong><a href="mailto:pocomaxs2@gmail.com" rel="noopener">email кореспонденция</a></strong>, за да общуваме с нашите клиенти, но можете да се свържете с нас и чрез нашата <strong><a href="contacts">контактна страница</a></strong>.
                         </section>
                         <button class="more-btn">КОНТАКТИ</button>
                     </section>
