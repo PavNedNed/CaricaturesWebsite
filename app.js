@@ -36,6 +36,7 @@ console.log(`Router Base set to: "${base}"`);
 
 // 2. Define Routes
 page('/', () => page.redirect('/home'));
+page('/index.html', () => page.redirect('/home'));
 page('/home', loadHomeView);
 page('/faq', loadFAQView);
 
