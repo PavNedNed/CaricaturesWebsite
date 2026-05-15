@@ -42,7 +42,8 @@
         background-image: url('./images/bg-image.jpg');
     }
 
-    .faq-wrapper .top-image {
+    .faq-wrapper .top-image,
+    .help-wrapper .top-image {
         margin: 110px auto 0;
     }
 }
