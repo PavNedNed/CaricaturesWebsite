@@ -33,7 +33,7 @@ let temp = (dummy) => html `
                             Работим в три фази - скеч, линиране и оцветяване.<br>
                             Първата фаза започва след като ни споделите Вашата идея и ни изпратите нужните снимки.
                         </section>
-                        <button class="more-btn">НАШАТА РАБОТА</button>
+                        <a href="product"><button class="more-btn">НАШАТА РАБОТА</button></a>
                     </section>
                     <section class="home-section-container">
                         <section class="home-section-img">
@@ -42,7 +42,7 @@ let temp = (dummy) => html `
                         <section class="home-section-text">
                             След като сте доволни с крайния резултат, печатаме картините с помощта на принтери с висока резолюция, слагаме ги в рамки и ги изпращаме чрез куриер.
                         </section>
-                        <button class="more-btn">ПОРТФОЛИО</button>
+                        <a href="gallery"><button class="more-btn">ПОРТФОЛИО</button></a>
                     </section>
                     <section class="home-section-container">
                         <section class="home-section-img">
@@ -51,7 +51,7 @@ let temp = (dummy) => html `
                         <section class="home-section-text">
                             Обикновено използваме <strong><a href="mailto:pocomaxs2@gmail.com" rel="noopener">email кореспонденция</a></strong>, за да общуваме с нашите клиенти, но можете да се свържете с нас и чрез нашата <strong><a href="contacts">контактна страница</a></strong>.
                         </section>
-                        <button class="more-btn">КОНТАКТИ</button>
+                        <a href="contacts"><button class="more-btn">КОНТАКТИ</button></a>
                     </section>
                 </section>
             </section>
