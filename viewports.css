@@ -43,7 +43,9 @@
     }
 
     .faq-wrapper .top-image,
-    .help-wrapper .top-image {
+    .help-wrapper .top-image, 
+    .contacts-wrapper .wrap-container {
+    
         margin: 110px auto 0;
     }
 }

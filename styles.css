@@ -483,10 +483,6 @@ i {
 .help-wrapper .title {
     padding-top: 20px;
 }
-/* .help-wrapper .description  {
-    padding-left: 50px;
-    text-indent: -50px;
-} */
 
 .help-wrapper .title {
     padding-top: 20px;
@@ -501,6 +497,61 @@ i {
     padding-top: 30px;
     font-weight: bold;
     color:#fe2a12;
+}
+
+/* --------------------------------------------  CONTACTS -------------------------------------------- */
+
+.contacts-wrapper {
+    padding: 0 30px;
+}
+
+.contacts-wrapper .wrap-container {
+    margin: 50px auto 0;
+    max-width: 900px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+/* LEFT SIDE */
+.contacts-wrapper .left-image {
+    flex: 1 1 400px;
+}
+
+.contacts-wrapper .left-image img {
+    width: 100%;
+    display: block;
+}
+
+/* RIGHT SIDE */
+.contacts-wrapper .right-content {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.contacts-wrapper .right-content img {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contacts-wrapper .highlighted {
+    font-weight: bold;
+    padding-bottom: 15px;
+    color:#fe2a12;
+    font-size: 20px;
+}
+
+.contacts-wrapper a {
+    text-decoration: none;
+}
+
+.contacts-wrapper .centered {
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 /* --------------------------------------------  FOOTER -------------------------------------------- */

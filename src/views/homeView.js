@@ -10,7 +10,7 @@ let temp = (dummy) => html `
                     <section class="top-text" data-text="РЪЧНО РИСУВАНИ">РЪЧНО РИСУВАНИ</section>
                     <section class="main-text">КАРИКАТУРИ</section>
                     <section class="bottom-text" data-text="ПО ПОРЪЧКА">ПО ПОРЪЧКА</section>
-                    <button class="more-btn">НАУЧИ ПОВЕЧЕ</button>
+                    <a href="product"><button class="more-btn">НАУЧИ ПОВЕЧЕ</button></a>
                 </section>
 
                 <hr>
