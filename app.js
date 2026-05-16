@@ -42,6 +42,12 @@ page.base(base);
 console.log(`Router Base set to: "${base}"`);
 
 // 2. Define Routes
+page('*', (ctx, next) => {
+  window.scrollTo(0, 0);
+  next();
+});
+
+
 page('/', () => page.redirect('/home'));
 page('/index.html', () => page.redirect('/home'));
 page('/home', loadHomeView);
