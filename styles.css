@@ -554,6 +554,52 @@ i {
     text-align: center;
 }
 
+/* --------------------------------------------  TEMPLATES -------------------------------------------- */
+
+.templates-wrapper {
+    padding: 0 30px;
+}
+
+.templates-wrapper .wrap-container {
+    margin: 50px auto 0;
+    max-width: 900px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LEFT SIDE */
+.templates-wrapper .left-image {
+    flex: 1 1 400px;
+}
+
+.templates-wrapper .left-image img {
+    width: 100%;
+    /* display: block; */
+}
+
+/* RIGHT SIDE */
+.templates-wrapper .right-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.templates-wrapper .right-image img {
+    /* max-width: 400px; */
+    width: 100%;
+}
+
+.templates-wrapper .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrap-container {
+    /* padding-bottom: 20px; */
+}
+
 /* --------------------------------------------  FOOTER -------------------------------------------- */
 .testimonials-img img {
     width: 140px;
