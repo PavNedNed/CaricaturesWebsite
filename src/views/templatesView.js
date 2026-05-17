@@ -34,7 +34,7 @@ let temp = (dummy) => html `
                 <section class="left-image">
                     <img src="./images/templates/5.jpg">
                     <div class="title">Шаблон на барон</div>
-                    <div class="description">Само лицето може да бъде променено.</div>
+                    <div class="description">Само лицето и текстът могат да бъдат променени.</div>
                 </section>
                 <section class="right-image">
                     <img src="./images/templates/6.jpg">
