@@ -6,11 +6,17 @@ let main;
 
 let temp = (dummy) => html `
 <section class="templates-wrapper">
+            <section class="templates-top-text">
+                <h2>ПРЕДВАРИТЕЛНО НАПРАВЕНИ ШАБЛОНИ</h2>
+                <p>Някои от нашите клиенти харесват предварително направени шаблони заради разликата в цената и предимството за по-краткосрочна изработка.</p>
+                <p class="bottom-description">Поради тази причина предлагаме следните шаблони:</p>
+            </section>
+
             <section class="wrap-container">
                 <section class="left-image">
                     <img src="./images/templates/1.jpg">
                     <div class="title">Шаблон на футболист</div>
-                    <div class="description">Само лицето и екипировката могат да бъдат променени.</div>
+                    <div class="description">Само лицето и екипът могат да бъдат променени.</div>
                 </section>
                 <section class="right-image">
                     <img src="./images/templates/2.jpg">

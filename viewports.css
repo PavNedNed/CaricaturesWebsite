@@ -46,7 +46,8 @@
     .help-wrapper .top-image, 
     .contacts-wrapper .wrap-container,
     .templates-wrapper,
-    .product-wrapper {
+    .product-wrapper,
+    .logos-wrapper{
     
         margin: 110px auto 0;
     }
