@@ -45,7 +45,8 @@
     .faq-wrapper .top-image,
     .help-wrapper .top-image, 
     .contacts-wrapper .wrap-container,
-    .templates-wrapper {
+    .templates-wrapper,
+    .product-wrapper {
     
         margin: 110px auto 0;
     }

@@ -13,27 +13,6 @@ import { loadLogosView } from "./src/views/logosView.js";
 
 import { } from "./src/dropDownMenu.js"
 
-// CHECK LOCALHOST
-// const isLocalhost = window.location.hostname === 'localhost' || 
-//                     window.location.hostname === '127.0.0.1';
-
-// if (isLocalhost) {
-//     console.log("Running on Localhost");
-//     // You usually don't need a base path on localhost
-//     page.base(''); 
-// } else {
-//     console.log("Running on GitHub Pages");
-//     // This is for your /CaricaturesWebsite/ path
-//     page.base('/CaricaturesWebsite');
-// }
-
-// // This handles the "empty" path after CaricaturesWebsite/
-// // page('/', () => page.redirect('/home')); 
-
-// page("/home", loadHomeView);
-// page("/faq", loadFAQView);
-// page();
-
 // 1. Automatic Base Path Detection
 const isGitHub = window.location.hostname.includes('github.io');
 const base = isGitHub ? '/CaricaturesWebsite' : '';
