@@ -12,6 +12,7 @@ import { loadTemplatesView } from "./src/views/templatesView.js"
 import { loadLogosView } from "./src/views/logosView.js";
 
 import { } from "./src/dropDownMenu.js"
+import { scrollFunction, topFunction } from "./src/scrollBtn.js"
 
 // 1. Automatic Base Path Detection
 const isGitHub = window.location.hostname.includes('github.io');
