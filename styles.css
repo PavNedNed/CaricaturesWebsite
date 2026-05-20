@@ -191,7 +191,7 @@ i {
 }
 
 .toggle-container {
-    z-index: 0;
+    z-index: 1;
 
     position: absolute;
     left: 50%;
@@ -609,6 +609,7 @@ i {
 .product-wrapper {
     padding: 0 30px;
     margin: 50px auto 0;
+    max-width: 900px;
 }
 
 .product-wrapper .wrap-container {
@@ -799,7 +800,6 @@ footer .navigation-container {
     background-size: cover;
     background-position: center;
 
-    /* min-height: 100vh; */
     color: rgb(167, 167, 167);
 }
 
@@ -884,4 +884,105 @@ footer hr {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* --------------------------------------------  GALLERY -------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+.gallery-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto 0;
+    
+    z-index: -1;
+}
+
+.gallery-top-text {
+    padding: 0 30px;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 16px; */
+    background: #000;
+
+    margin: 10px auto 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    /* height: 70vh; */
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.dot.active {
+    background:#fe2a12;
+}
+
+@media (max-width: 768px) {
+    .slide img {
+        height: 50vh;
+    }
+
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
 }
