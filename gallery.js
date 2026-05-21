@@ -1,3 +1,5 @@
+let autoSlideInterval = null;
+
 function initGallery() {
 
     const totalImages = 20;
@@ -14,6 +16,9 @@ function initGallery() {
     }
 
     let currentIndex = 0;
+
+    // Clear existing interval if initGallery runs again
+    clearInterval(autoSlideInterval);
 
     // Clear existing content
     carousel.innerHTML = "";
@@ -38,6 +43,7 @@ function initGallery() {
 
         dot.addEventListener("click", () => {
             goToSlide(i - 1);
+            startAutoSlide();
         });
 
         dotsContainer.appendChild(dot);
@@ -46,6 +52,7 @@ function initGallery() {
     const dots = document.querySelectorAll(".dot");
 
     function updateCarousel() {
+
         carousel.style.transform =
             `translateX(-${currentIndex * 100}%)`;
 
@@ -56,24 +63,58 @@ function initGallery() {
         dots[currentIndex].classList.add("active");
     }
 
-    window.nextSlide = function () {
-        currentIndex = (currentIndex + 1) % totalImages;
-        updateCarousel();
-    };
+    function startAutoSlide() {
 
-    window.prevSlide = function () {
-        currentIndex =
-            (currentIndex - 1 + totalImages) % totalImages;
+        // Always clear old interval first
+        clearInterval(autoSlideInterval);
 
-        updateCarousel();
-    };
+        autoSlideInterval = setInterval(() => {
+            nextSlide();
+        }, 6000);
+    }
 
     function goToSlide(index) {
         currentIndex = index;
         updateCarousel();
     }
 
-    setInterval(window.nextSlide, 4000);
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentIndex =
+            (currentIndex - 1 + totalImages) % totalImages;
+
+        updateCarousel();
+    }
+
+    // Make available globally if needed
+    window.nextSlide = () => {
+        nextSlide();
+        startAutoSlide();
+    };
+
+    window.prevSlide = () => {
+        prevSlide();
+        startAutoSlide();
+    };
+
+    // Optional arrow buttons
+    const nextBtn = document.getElementById("next");
+    const prevBtn = document.getElementById("prev");
+
+    nextBtn?.addEventListener("click", () => {
+        nextSlide();
+        startAutoSlide();
+    });
+
+    prevBtn?.addEventListener("click", () => {
+        prevSlide();
+        startAutoSlide();
+    });
 
     updateCarousel();
+    startAutoSlide();
 }
