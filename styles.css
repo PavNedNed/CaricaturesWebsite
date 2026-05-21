@@ -966,7 +966,7 @@ footer hr {
 .dot {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
@@ -977,7 +977,8 @@ footer hr {
 
 @media (max-width: 768px) {
     .slide img {
-        height: 50vh;
+        /* height: 50vh; */
+        width: 100%;
     }
 
     .nav-btn {
